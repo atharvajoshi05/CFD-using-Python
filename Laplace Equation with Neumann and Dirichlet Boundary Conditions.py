@@ -26,7 +26,7 @@ def plot2D(x, y, p):
 def laplace2d(p, y, dx, dy, l1norm_target):
     l1norm = 1
     pn = numpy.empty_like(p)
-
+# l1norm_target defines how close the p matrix should be in two consecutive iterations before the loop breaks and returns the calculated p value.
     while l1norm > l1norm_target:
         pn = p.copy()
         p[1:-1, 1:-1] = ((dy**2 * (pn[1:-1, 2:] + pn[1:-1, 0:-2]) +
