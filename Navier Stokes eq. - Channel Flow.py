@@ -204,5 +204,6 @@ print(stepcount)
 fig = pyplot.figure(figsize = (11,7), dpi=100)
 pyplot.quiver(X[::3, ::3], Y[::3, ::3], u[::3, ::3], v[::3, ::3]);
 
-fig = pyplot.figure(figsize = (11,7), dpi=100)
+# or use this for more data points
+#fig = pyplot.figure(figsize = (11,7), dpi=100)
 pyplot.quiver(X, Y, u, v);
